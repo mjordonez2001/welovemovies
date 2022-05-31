@@ -3,6 +3,9 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
+const PORT = process.env.PORT || 4000;
+app.set("port", PORT)
+
 const moviesRouter = require("./routes/movies/movies.router");
 const reviewsRouter = require("./routes/reviews/reviews.router");
 const theatersRouter = require("./routes/theaters/theaters.router");
