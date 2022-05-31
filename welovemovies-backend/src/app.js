@@ -1,4 +1,4 @@
-if (process.env.DEVELOPMENT_DATABASE_URL || PRODUCTION_DATABASE_URL) require("dotenv").config();
+if (process.env.USER) require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
