@@ -1,6 +1,9 @@
 {
   "name": "project-movie-back-end",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.13.1"
+  },
   "description": "zid-be-project-movie-01-qualified",
   "main": "src/app.js",
   "scripts": {
