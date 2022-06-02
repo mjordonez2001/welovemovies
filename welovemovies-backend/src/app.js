@@ -3,6 +3,9 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
+const notFound = require("./routes/errors/notFound");
+const errorHandler = require("./routes/errors/errorHandler");
+
 const moviesRouter = require("./routes/movies/movies.router");
 const reviewsRouter = require("./routes/reviews/reviews.router");
 const theatersRouter = require("./routes/theaters/theaters.router");
@@ -14,20 +17,7 @@ app.use("/movies", moviesRouter);
 app.use("/reviews", reviewsRouter);
 app.use("/theaters", theatersRouter);
 
-//app.get('/', function (req, res) { console.log(req.path); res.send(); });
-
-// not-found handler
-app.use((request, response, next) => {
-    next({
-        status: 404,
-        error: `The route ${request.path} does not exist!`
-    });
-});
-
-// error handler
-app.use((error, request, response, next) => {
-    const { status = 500, message = "Something went wrong!" } = error;
-    response.status(status).json({ error: message });
-});
+app.use(notFound);
+app.use(errorHandler);
 
 module.exports = app;
