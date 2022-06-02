@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://mo-welovemovies-backend.herokuapp.com/";
+const API_BASE_URL = "https://mo-welovemovies-backend.herokuapp.com";
 
 /**
  * Defines the default headers for these functions to work with `json-server`
