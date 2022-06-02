@@ -14,8 +14,8 @@ app.use("/movies", moviesRouter);
 app.use("/reviews", reviewsRouter);
 app.use("/theaters", theatersRouter);
 
-app.set("base", "/"); 
-app.use("/", express);
+//app.set("base", "/"); 
+//app.use("/", express);
 
 // not-found handler
 app.use((request, response, next) => {
