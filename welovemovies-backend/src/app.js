@@ -14,7 +14,7 @@ app.use("/movies", moviesRouter);
 app.use("/reviews", reviewsRouter);
 app.use("/theaters", theatersRouter);
 
-app.get('/', function (req, res) { console.log(req.path); res.send(); });
+//app.get('/', function (req, res) { console.log(req.path); res.send(); });
 
 // not-found handler
 app.use((request, response, next) => {
