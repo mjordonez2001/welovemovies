@@ -13,7 +13,8 @@ app.use(express.json());
 app.use("/movies", moviesRouter);
 app.use("/reviews", reviewsRouter);
 app.use("/theaters", theatersRouter);
-app.use("/");
+
+app.get("/");
 
 // not-found handler
 app.use((request, response, next) => {
