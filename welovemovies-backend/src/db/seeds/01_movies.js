@@ -1,5 +1,5 @@
 exports.seed = function (knex) {
-  return knex("movies").update([
+  return knex("movies").insert([
     {
       title: "Spirited Away",
       runtime_in_minutes: 125,
