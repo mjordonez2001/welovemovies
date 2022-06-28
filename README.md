@@ -1,4 +1,4 @@
-# WeLoveMOvies
+# WeLoveMovies
 
 ## Live Website
 A live version of WeLoveMovies is able to be accessed through Heroku at [mo-welovemovies-frontend.herokuapp.com/](https://mo-welovemovies-frontend.herokuapp.com/) 
@@ -10,7 +10,7 @@ A live version of WeLoveMovies is able to be accessed through Heroku at [mo-welo
 
 ## Summary
 <p>
-  This application allows users to sea list of movies and a list of movie theaters that are showing those movies, along with all the details of each movie, including reviews. 
+  This application allows users to see list of movies and a list of movie theaters that are showing those movies, along with all the details of each movie, including reviews. 
 </p>
 
 ## Technologies Used
